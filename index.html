@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Modern - Rahma Fauzi Nurul Islam</title>
+
+    <!-- AdminLTE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0f172a;
+            --blue: #1d4ed8;
+            --sky: #38bdf8;
+            --gold: #d6b56d;
+            --white: #ffffff;
+            --soft: #f8fafc;
+            --text: #1e293b;
+            --muted: #64748b;
+            --line: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #eef2f7;
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+        }
+
+        .main-wrapper {
+            max-width: 1120px;
+            margin: 35px auto;
+            background: var(--white);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1d4ed8);
+            color: white;
+            padding: 46px 50px 95px;
+            position: relative;
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 38px;
+        }
+
+        .hero-top h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .badge-task {
+            background: rgba(255, 255, 255, 0.13);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #e0f2fe;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin: 0 0 10px;
+        }
+
+        .hero h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #bae6fd;
+            margin: 0 0 18px;
+        }
+
+        .hero p {
+            max-width: 720px;
+            color: #e2e8f0;
+            font-size: 15px;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .profile-card {
+            background: white;
+            margin: -60px 50px 0;
+            border-radius: 24px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+            padding: 28px;
+            display: grid;
+            grid-template-columns: 170px 1fr;
+            gap: 28px;
+            align-items: center;
+            position: relative;
+            z-index: 5;
+        }
+
+        .profile-img {
+            width: 155px;
+            height: 155px;
+            border-radius: 22px;
+            object-fit: cover;
+            border: 5px solid #e0f2fe;
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+        }
+
+        .profile-info h3 {
+            font-size: 28px;
+            font-weight: 800;
+            margin: 0 0 8px;
+            color: var(--navy);
+        }
+
+        .profile-info .role {
+            display: inline-block;
+            color: var(--blue);
+            font-weight: 700;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        .quick-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .quick-item {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 12px 14px;
+            font-size: 13.5px;
+            color: #475569;
+        }
+
+        .quick-item i {
+            color: var(--blue);
+            margin-top: 3px;
+            width: 16px;
+            flex-shrink: 0;
+        }
+
+        .content {
+            padding: 38px 50px 50px;
+        }
+
+        .section {
+            margin-bottom: 34px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .section-title .icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 14px;
+            background: #eff6ff;
+            color: var(--blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .section-title h3 {
+            margin: 0;
+            font-size: 23px;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        .about-card {
+            background: linear-gradient(135deg, #f8fafc, #eff6ff);
+            border: 1px solid #dbeafe;
+            border-radius: 22px;
+            padding: 24px;
+        }
+
+        .about-card p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #475569;
+            text-align: justify;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .info-card {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 22px;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+        }
+
+        .info-card h4 {
+            font-size: 17px;
+            font-weight: 800;
+            color: var(--navy);
+            margin: 0 0 7px;
+        }
+
+        .info-card .meta {
+            display: block;
+            color: var(--blue);
+            font-size: 13.5px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #475569;
+            font-size: 14.2px;
+            line-height: 1.75;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .skill-box {
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 18px 14px;
+            text-align: center;
+            transition: 0.25s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+        }
+
+        .skill-box i {
+            width: 46px;
+            height: 46px;
+            background: #eff6ff;
+            color: var(--blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            margin: 0 auto 10px;
+            font-size: 20px;
+        }
+
+        .skill-box span {
+            display: block;
+            font-size: 13.5px;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        .portfolio-card {
+            background: #0f172a;
+            color: white;
+            border-radius: 22px;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .portfolio-card h4 {
+            margin: 0 0 8px;
+            font-weight: 800;
+            font-size: 19px;
+            color: white;
+        }
+
+        .portfolio-card p {
+            margin: 0;
+            color: #cbd5e1;
+            font-size: 14.5px;
+            line-height: 1.7;
+        }
+
+        .portfolio-card .portfolio-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            background: rgba(56, 189, 248, 0.16);
+            color: #7dd3fc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 18px;
+        }
+
+        .stat-box {
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            margin: 0 0 5px;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--blue);
+        }
+
+        .stat-box p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        .footer {
+            background: #f8fafc;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            padding: 18px;
+            font-size: 13.5px;
+            color: var(--muted);
+        }
+
+        @media (max-width: 900px) {
+            .main-wrapper {
+                margin: 20px 12px;
+            }
+
+            .hero {
+                padding: 34px 26px 88px;
+            }
+
+            .hero-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .profile-card {
+                margin: -55px 22px 0;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-img {
+                margin: 0 auto;
+            }
+
+            .quick-info {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 32px 22px 38px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .portfolio-card {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .portfolio-icon {
+                margin: 0 auto;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 29px;
+            }
+
+            .hero h2 {
+                font-size: 17px;
+            }
+
+            .profile-info h3 {
+                font-size: 24px;
+            }
+
+            .skill-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h3 {
+                font-size: 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .main-wrapper {
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <section class="hero">
+            <div class="hero-top">
+                <h4>Curriculum Vitae</h4>
+
+                <h1>Rahma Fauzi Nurul Islam</h1>
+                <h2>Mahasiswa Teknik Informatika</h2>
+
+        </section>
+
+        <section class="profile-card">
+            <img src="assets/img/pictures.jpeg" alt="Foto Profil" class="profile-img">
+
+            <div class="profile-info">
+                <h3></h3>
+                <span class="role">Mahasiswa Aktif</span>
+
+                <div class="quick-info">
+                    <div class="quick-item">
+                        <i class="fas fa-id-card"></i>
+                        <span>NIM: 301230056</span>
+                    </div>
+
+                    <div class="quick-item">
+                        <i class="fas fa-university"></i>
+                        <span>Program Studi: Teknik Informatika</span>
+                    </div>
+
+                    <div class="quick-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>rahmafauzi003@gmail.com</span>
+                    </div>
+
+                    <div class="quick-item">
+                        <i class="fas fa-phone"></i>
+                        <span>08837468782</span>
+                    </div>
+
+                    <div class="quick-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bandung, Indonesia</span>
+                    </div>
+
+                    <div class="quick-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/rahmafauzi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="content">
+
+            <section class="section">
+                <div class="section-title">
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Profil Singkat</h3>
+                </div>
+
+                <div class="about-card">
+                    <p>
+                        Saya adalah mahasiswa yang memiliki ketertarikan pada bidang teknologi informasi,
+                        khususnya pengembangan web, desain antarmuka, dan pemrograman internet. Saya memiliki
+                        kemampuan dasar dalam membuat halaman web menggunakan HTML, CSS, Bootstrap, AdminLTE,
+                        dan JavaScript. Saya terbiasa bekerja secara terstruktur, teliti, dan memiliki motivasi
+                        untuk terus meningkatkan kemampuan di bidang teknologi digital.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Pendidikan</h3>
+                </div>
+
+                <div class="two-column">
+                    <div class="info-card">
+                        <h4>Universitas Bale Bandung </h4>
+                        <span class="meta">Teknik Informatika | 2023 sampai Sekarang</span>
+                        <p>
+                            Mempelajari dasar pemrograman, pengembangan web, basis data,
+                            jaringan komputer, desain antarmuka, dan aplikasi berbasis internet.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>MA Al-Huda Pameungpeuk</h4>
+                        <span class="meta">MIPA | 2019 sampai 2022</span>
+                        <p>
+                            Mengembangkan dasar pengetahuan akademik, kedisiplinan,
+                            komunikasi, dan kemampuan bekerja sama dalam kegiatan sekolah.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Pengalaman</h3>
+                </div>
+
+                <div class="two-column">
+                    <div class="info-card">
+                        <h4>Pengembangan Website</h4>
+                        <span class="meta">Pemrograman Internet | 2026</span>
+                        <p>
+                            Membuat halaman CV berbasis web menggunakan AdminLTE, Bootstrap,
+                            HTML, CSS, dan Font Awesome. Proyek ini menampilkan data diri,
+                            pendidikan, pengalaman, portofolio, dan kontak pribadi.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Kegiatan Akademik</h4>
+                        <span class="meta">2024 sampai Sekarang</span>
+                        <p>
+                            Mengikuti kegiatan akademik dan nonakademik untuk melatih
+                            komunikasi, tanggung jawab, manajemen waktu, dan kerja sama tim.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Keahlian</h3>
+                </div>
+
+                <div class="skill-grid">
+                    <div class="skill-box">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fab fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fas fa-th-large"></i>
+                        <span>AdminLTE</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fas fa-file-word"></i>
+                        <span>Microsoft Word</span>
+                    </div>
+
+                    <div class="skill-box">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Desain Web</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <div class="icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Portofolio</h3>
+                </div>
+
+                <div class="portfolio-card">
+                    <div>
+                        <h4>Website Curriculum Vitae Online</h4>
+                        <p>
+                            Website CV online dengan tampilan modern, elegan, responsif, dan mudah dibaca.
+                            Website ini dibuat sebagai tugas mata kuliah Pemrograman Internet.
+                        </p>
+                    </div>
+
+                    <div class="portfolio-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>8+</h3>
+                        <p>Keahlian Dasar</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>2</h3>
+                        <p>Proyek Web</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h3>1</h3>
+                        <p>CV Online</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            © 2026 Nama Kamu. Dibuat menggunakan AdminLTE untuk Tugas Pemrograman Internet.
+        </footer>
+
+    </div>
+
+    <!-- Script AdminLTE -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+
+</body>
+
+</html>
